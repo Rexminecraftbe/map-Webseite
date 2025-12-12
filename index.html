@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=http://185.207.164.15:19030">
+    <title>Weiterleitung zur Minecraft Server Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 2rem auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .server-info {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Minecraft Server Map</h1>
+        <div class="loader"></div>
+        <p>Du wirst automatisch weitergeleitet...</p>
+        <div class="server-info">
+            <strong>Server:</strong> 185.207.164.15:19030
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">
+            Falls die Weiterleitung nicht funktioniert, klicke 
+            <a href="http://45.15.210.5:19030">hier</a>
+        </p>
+    </div>
+
+    <script>
+        // Sofortige Weiterleitung nach 1 Sekunde
+        setTimeout(function() {
+            window.location.href = 'http://45.15.210.5:19030';
+        }, 1000);
+    </script>
+</body>
+</html>
